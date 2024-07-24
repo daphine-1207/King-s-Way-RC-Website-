@@ -1,0 +1,306 @@
+/* Basic styling for the body and container */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(229, 239, 243);
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #fff;
+    width: 100%;
+    min-height: 50px;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar img {
+    height: 40px; /* Adjust as needed */
+    margin-right: 10px;
+}
+
+.navbar h1 {
+    font-size: 1.2rem;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin-right: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 40px;
+    
+}
+
+.navbar ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    position: relative; /* Ensure the ::after element is positioned relative to the link */
+
+}
+
+.navbar ul li a:hover {
+    color: rgb(221, 221, 111);
+}
+
+/* Add the underline effect */
+.navbar ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(255, 215, 0); /* Same color as the text on hover */  
+    transition: width 0.3s; /* Smooth transition */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.navbar ul li a:hover::after {
+    width: 100%; /* Expand the underline on hover */
+}
+
+/* Responsive styles */
+@media(max-width: 768px) {
+    .navbar ul li {
+        display: block;
+        /* margin: 10px 0; */
+        text-align: left;
+
+    }
+}
+
+h2 {
+    font-family: fantasy;
+    margin-top: 80px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body .btn {
+    margin-top: auto;
+}
+
+/* Modal customization */
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    border-bottom: none; /* Remove default border */
+}
+
+.modal-header .close {
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.modal-header .close span {
+    font-size: 1.5rem;
+}
+
+.modal-body .form-group {
+    margin-bottom: 15px;
+}
+
+.modal-body .form-control {
+    border-radius: 5px;
+}
+
+.modal-body .btn-primary {
+    width: 100%;
+    background-color: #007bff;
+    border: none;
+}
+
+.modal-body .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+/* General Footer Styling */
+.footer {
+    background-color: #333;
+    padding: 40px 0;
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer .container {
+    max-width: 1200px; /* Ensures the footer content doesn't extend too wide */
+    margin: 0 auto; /* Centers the footer content horizontally */
+}
+
+/* Flexbox setup for footer content */
+.footer .footer-content {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    justify-content: space-between;
+}
+
+/* Contact Information Section */
+.footer .contact-info {
+    flex: 1 1 300px; /* Flex properties for responsiveness */
+    margin-right: 20px;
+}
+
+.footer .contact-info h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: yellow;
+    font-size: 16px;
+}
+
+.footer .contact-info p {
+    margin: 5px 0;
+}
+
+/* Quick Links Section */
+.footer .footer-menu {
+    flex: 1 1 300px; /* Flex properties for responsiveness */
+}
+
+.footer .footer-menu h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: yellow;
+    font-size: 16px;
+   
+}
+
+.footer .footer-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.footer .footer-menu ul li {
+    margin-bottom: 8px;
+}
+
+.footer .footer-menu ul li a {
+    text-decoration: none;
+    color: #fff;;
+    transition: color 0.3s ease;
+}
+
+.footer .footer-menu ul li a:hover {
+    color: black;
+}
+
+/* Social Icons Section */
+.footer .footer-social {
+    flex: 1 1 300px; /* Flex properties for responsiveness */
+    text-align: right;
+}
+
+.footer .footer-social h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: yellow;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.footer .social-icons {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+.footer .social-icons li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.footer .social-icons li:first-child {
+    margin-left: 0;
+}
+
+.footer .social-icons li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.footer .social-icons li a:hover {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+}
+
+/* Bottom Footer */
+.bottom-footer {
+    background-color: #333 ;
+    padding: 10px 0;
+    text-align: center;
+    color: silver;
+    font-size: 12px;
+}
+

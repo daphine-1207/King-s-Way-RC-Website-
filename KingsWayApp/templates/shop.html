@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King's Way Rehabilitaion Center</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/css/shop.css">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <header class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="{% static 'images/king's_way_logo.png' %}" alt="Logo" height="50">
+            </a>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="background-color: black;"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a style="color: black;" class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a style="color: black;" class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a style="color: black;" class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item"><a style="color: black;" class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a style="color: black;" class="nav-link" href="donate.html">Donate</a></li>
+                    <li class="nav-item"><a style="color: black;" class="nav-link" href="shop.html">Online Shop</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <h2 class="text-center mb-4">Online Shop</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="images/men's-shirt.jpeg" class="card-img-top" alt="Men's Shirt">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Men's Shirt</h5>
+                        <p class="card-text">$20.00</p>
+                        <button class="btn btn-primary mt-auto" data-toggle="modal" data-target="#shopModal">Shop</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="images/women's-shirts.jpeg" class="card-img-top" alt="Women's Shirt">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Women's Shirt</h5>
+                        <p class="card-text">$20.00</p>
+                        <button class="btn btn-primary mt-auto" data-toggle="modal" data-target="#shopModal">Shop</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="images/children's-shirts.jpeg" class="card-img-top" alt="Children's Shirt">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Children's Shirt</h5>
+                        <p class="card-text">$15.00</p>
+                        <button class="btn btn-primary mt-auto" data-toggle="modal" data-target="#shopModal">Shop</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="images/jumpers.jpeg" class="card-img-top" alt="Jumper">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Jumper</h5>
+                        <p class="card-text">$30.00</p>
+                        <button class="btn btn-primary mt-auto" data-toggle="modal" data-target="#shopModal">Shop</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="images/bottles.jpeg" class="card-img-top" alt="Bottle">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Bottle</h5>
+                        <p class="card-text">$10.00</p>
+                        <button class="btn btn-primary mt-auto" data-toggle="modal" data-target="#shopModal">Shop</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="images/wristbands.jpeg" class="card-img-top" alt="Wristband">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Wristband</h5>
+                        <p class="card-text">$5.00</p>
+                        <button class="btn btn-primary mt-auto" data-toggle="modal" data-target="#shopModal">Shop</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="images/cap.jpeg" class="card-img-top" alt="Cap">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Cap</h5>
+                        <p class="card-text">$15.00</p>
+                        <button class="btn btn-primary mt-auto" data-toggle="modal" data-target="#shopModal">Shop</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="images/umbrella.jpeg" class="card-img-top" alt="Umbrella">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Umbrella</h5>
+                        <p class="card-text">$20.00</p>
+                        <button class="btn btn-primary mt-auto" data-toggle="modal" data-target="#shopModal">Shop</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="images/notebooks.jpeg" class="card-img-top" alt="Notebook">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Notebook</h5>
+                        <p class="card-text">$10.00</p>
+                        <button class="btn btn-primary mt-auto" data-toggle="modal" data-target="#shopModal">Shop</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal fade" id="shopModal" tabindex="-1" aria-labelledby="shopModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="shopModalLabel">Purchase Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" class="form-control" id="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Delivery Address</label>
+                            <input type="text" class="form-control" id="address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="paymentOptions">Payment Options</label>
+                            <select class="form-control" id="paymentOptions" required>
+                                <option value="">Select Payment Method</option>
+                                <option value="creditCard">Credit Card</option>
+                                <option value="debitCard">Debit Card</option>
+                                <option value="paypal">PayPal</option>
+                                <option value="cashOnDelivery">Cash on Delivery</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p>King's Way Rehabilitation Center</p>
+                        <p>Plot 154, Kiwango, Jomayi Estate, Mukono</p>
+                        <p>Phone: (256) 757362263 | (256) 788055607</p>
+                        <p>Email: kingswayrehabilitation@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-menu">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="donate.html">Donate</a></li>
+                            <li><a href="shop.html">Online Shop</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-social">
+                        <h3>Follow Us</h3>
+                        <ul class="social-icons">
+                            <li><a href="https://www.facebook.com/KingsWayRehabilitation" target="_blank"><i
+                                        class="fab fa-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/KingsWayRehabi1" target="_blank"><i
+                                        class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/kingswayrehabilitation/" target="_blank"><i
+                                        class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <hr>
+            <div class="container">
+                <p>&copy; 2024 King's Way Rehabilitation Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
