@@ -1,3 +1,6 @@
+{% extends 'base.html' %}
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +19,7 @@
     <header class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="{% static 'images/king's_way_logo.png' %}" alt="Logo" height="50">
+                <img src="{% static 'images/kings_way_logo.png' %}" alt="Logo" height="50">
             </a>
             <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,13 +27,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a style="color: black;" class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a style="color: black;" class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a style="color: black;" class="nav-link" href="services.html">Services</a>
-                    </li>
-                    <li class="nav-item"><a style="color: black;" class="nav-link" href="contact.html">Contact</a></li>
-                    <li class="nav-item"><a style="color: black;" class="nav-link" href="donate.html">Donate</a></li>
-                    <li class="nav-item"><a style="color: black;" class="nav-link" href="shop.html">Online Shop</a></li>
+                    <li class="nav-item"><a style="color: black;" class="nav-link" href="{% url 'index' %}">Home</a></li>
+                    <li class="nav-item"><a style="color: black;" class="nav-link" href="{% url 'about' %}">About</a></li>
+                    <li class="nav-item"><a style="color: black;" class="nav-link" href="{% url 'services' %}">Services</a></li>
+                    <li class="nav-item"><a style="color: black;" class="nav-link" href="{% url 'gallery' %}">Gallery</a></li>
+                    <li class="nav-item"><a style="color: black;" class="nav-link" href="{% url 'contact' %}">Contact</a></li>
+                    <li class="nav-item"><a style="color: black;" class="nav-link" href="{% url 'donate' %}">Donate</a></li>
+                    <li class="nav-item"><a style="color: black;" class="nav-link" href="{% url 'shop' %}">Online Shop</a></li>
                 </ul>
             </div>
         </div>
@@ -197,13 +200,15 @@
                     <div class="footer-menu">
                         <h3>Quick Links</h3>
                         <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="donate.html">Donate</a></li>
-                            <li><a href="shop.html">Online Shop</a></li>
-                        </ul>
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item"><a style="color: black;" class="nav-link" href="{% url 'index' %}">Home</a></li>
+                                <li class="nav-item"><a style="color: black;" class="nav-link" href="{% url 'about' %}">About</a></li>
+                                <li class="nav-item"><a style="color: black;" class="nav-link" href="{% url 'services' %}">Services</a></li>
+                                <li class="nav-item"><a style="color: black;" class="nav-link" href="{% url 'gallery' %}">Gallery</a></li>
+                                <li class="nav-item"><a style="color: black;" class="nav-link" href="{% url 'contact' %}">Contact</a></li>
+                                <li class="nav-item"><a style="color: black;" class="nav-link" href="{% url 'donate' %}">Donate</a></li>
+                                <li class="nav-item"><a style="color: black;" class="nav-link" href="{% url 'shop' %}">Online Shop</a></li>
+                            </ul>
                     </div>
                 </div>
                 <div class="col-md-3">
